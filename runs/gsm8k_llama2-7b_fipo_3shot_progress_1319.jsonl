@@ -1075,3 +1075,7 @@
 {"idx": 1074, "pred_num": "1000", "gold": "750", "correct": 0}
 {"idx": 1075, "pred_num": "1", "gold": "16", "correct": 0}
 {"idx": 1076, "pred_num": "100", "gold": "162", "correct": 0}
+{"idx": 1077, "pred_num": "100", "gold": "145", "correct": 0}
+{"idx": 1078, "pred_num": "12", "gold": "8", "correct": 0}
+{"idx": 1079, "pred_num": "15", "gold": "10", "correct": 0}
+{"idx": 1080, "pred_num": "120", "gold": "72000", "correct": 0}
