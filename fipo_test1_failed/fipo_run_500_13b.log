@@ -1,0 +1,102 @@
+GPU 記憶體已重置
+======================================================================
+FIPO 實驗: Llama2-7B on GSM8K
+Generator: meta-llama/Llama-2-7b-hf
+Optimizer: allenai/tulu-2-dpo-13b
+Limit: 500, Shots: 3
+======================================================================
+跳過 Naive baseline
+
+使用預設或已保存的 FIPO 指令
+
+已從 data/fipo_instruction_13b.txt 讀取
+✓ FIPO 指令: To effectively solve math word problems, follow these steps:
+1. Carefully read and understand the problem to identify the key information and the type of operation required.
+2. Break down the problem into smaller parts, if necessary, to simplify the process.
+3. Perform the necessary calculations, either mentally or using a calculator, and write down each step.
+4. Double-check your work to ensure accuracy and correct any errors.
+5. Present the final numeric answer clearly and concisely, along with any relevant units or measurements.
+By following these steps, you will be able to solve math word problems effectively and accurately.
+
+第 3 步: FIPO 評測 (Llama2-7B)
+
+
+======================================================================
+評測: meta-llama/Llama-2-7b-hf | 模式: fipo | Shots: 3
+指令: To effectively solve math word problems, follow these steps:
+1. Carefully read a...
+======================================================================
+
+載入 Llama2-7B 模型...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:59<00:59, 59.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:22<00:00, 37.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:22<00:00, 41.04s/it]
+載入 GSM8K...
+限制為 500 題
+開始評測 500 題...
+
+進度檔: JSONL -> runs/gsm8k_llama2-7b_fipo_3shot_progress_500.jsonl
+進度檔: LOG   -> runs/gsm8k_fipo_3shot_progress_500.log
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+完成 10/500, 正確率: 30.00%
+完成 20/500, 正確率: 20.00%
+完成 30/500, 正確率: 13.33%
+完成 40/500, 正確率: 12.50%
+完成 50/500, 正確率: 10.00%
+完成 60/500, 正確率: 11.67%
+完成 70/500, 正確率: 10.00%
+完成 80/500, 正確率: 11.25%
+完成 90/500, 正確率: 10.00%
+完成 100/500, 正確率: 10.00%
+完成 110/500, 正確率: 9.09%
+完成 120/500, 正確率: 8.33%
+完成 130/500, 正確率: 9.23%
+完成 140/500, 正確率: 9.29%
+完成 150/500, 正確率: 10.00%
+完成 160/500, 正確率: 9.38%
+完成 170/500, 正確率: 9.41%
+完成 180/500, 正確率: 9.44%
+完成 190/500, 正確率: 9.47%
+完成 200/500, 正確率: 9.50%
+完成 210/500, 正確率: 9.05%
+完成 220/500, 正確率: 9.09%
+完成 230/500, 正確率: 8.70%
+完成 240/500, 正確率: 8.33%
+完成 250/500, 正確率: 8.00%
+完成 260/500, 正確率: 7.69%
+完成 270/500, 正確率: 7.41%
+完成 280/500, 正確率: 7.14%
+完成 290/500, 正確率: 6.90%
+完成 300/500, 正確率: 6.67%
+完成 310/500, 正確率: 7.42%
+完成 320/500, 正確率: 7.81%
+完成 330/500, 正確率: 7.88%
+完成 340/500, 正確率: 7.94%
+完成 350/500, 正確率: 7.71%
+完成 360/500, 正確率: 7.78%
+完成 370/500, 正確率: 7.57%
+完成 380/500, 正確率: 8.16%
+完成 390/500, 正確率: 8.21%
+完成 400/500, 正確率: 8.25%
+完成 410/500, 正確率: 8.29%
+完成 420/500, 正確率: 8.10%
+完成 430/500, 正確率: 7.91%
+完成 440/500, 正確率: 7.95%
+完成 450/500, 正確率: 7.78%
+完成 460/500, 正確率: 7.61%
+完成 470/500, 正確率: 7.45%
+完成 480/500, 正確率: 7.50%
+完成 490/500, 正確率: 7.55%
+完成 500/500, 正確率: 7.80%
+
+======================================================================
+結果: fipo | 準確率: 7.80% (39/500)
+檔案: runs/gsm8k_llama2-7b_fipo_3shot_500_13b.json
+======================================================================
+
+✓ FIPO: 7.80%
+
+======================================================================
+最終結果 (Llama2-7B on GSM8K)
+======================================================================
+FIPO Prompt:     7.80%
+======================================================================

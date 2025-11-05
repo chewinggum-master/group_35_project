@@ -1,0 +1,17 @@
+======================================================================
+Stage 1: Optimize prompts
+Optimizer: allenai/tulu-2-dpo-13b
+4bit: True
+Total: 20
+======================================================================
+
+[Q4] Optimized prompt too short/empty, using silver prompt
+[Q5] Optimized prompt too short/empty, using silver prompt
+[10/20] Generated optimized prompts
+[Q10] Optimized prompt too short/empty, using silver prompt
+[Q15] Optimized prompt too short/empty, using silver prompt
+[20/20] Generated optimized prompts
+
+======================================================================
+Stage 1 done. Prompts at: runs/gsm8k_instance_optimized_prompts_20.jsonl
+======================================================================

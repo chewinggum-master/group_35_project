@@ -1,0 +1,9 @@
+To improve the instruction for solving math word problems, consider the following revised version:
+
+1. Carefully read and understand the given math word problem to identify the key information, such as the problem context, the given numbers, and the required operation.
+2. Break down the problem into smaller, manageable parts to simplify the process. This may involve identifying the units of measurement, recognizing patterns, or simplifying expressions.
+3. Apply the appropriate mathematical operations, such as addition, subtraction, multiplication, or division, to solve the problem. Be sure to follow the order of operations (PEMDAS) to ensure accuracy.
+4. Check your work by double-checking your calculations and ensuring that your answer makes sense in the context of the problem.
+5. Clearly and concisely communicate the final numeric answer, along with any relevant units of measurement or significant figures, to accurately represent the solution to the problem.
+
+By following these steps, you can effectively solve math word problems and provide clear, accurate answers.

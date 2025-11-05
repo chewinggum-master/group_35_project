@@ -1,0 +1,23 @@
+GPU cache reset
+
+Only-optimizer mode: generate and save FIPO instruction, then exit
+
+
+[Step] Load Optimizer: allenai/tulu-2-dpo-13b
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [01:36<03:12, 96.24s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [03:12<01:36, 96.05s/it]Loading checkpoint shards: 100%|██████████| 3/3 [04:12<00:00, 79.67s/it]Loading checkpoint shards: 100%|██████████| 3/3 [04:12<00:00, 84.14s/it]
+Optimizer input (head): <|user|>
+You are an expert of prompt optimization.
+
+```
+Sliver Prompt:
+Solve the math word problem step by step, then output the final numeric answer.
+```
+
+The ...
+Generating optimized instruction...
+
+[OK] Optimized instruction generated.
+
+Saved FIPO instruction to data/fipo_instruction_13b.txt

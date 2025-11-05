@@ -1,0 +1,416 @@
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
+`torch_dtype` is deprecated! Use `dtype` instead!
+GPU cache reset
+
+======================================================================
+階段 1/2: 生成優化 Prompts
+Optimizer: allenai/tulu-2-dpo-13b
+4-bit 量化: True
+======================================================================
+
+[1/2] Loading Optimizer: allenai/tulu-2-dpo-13b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [01:48<03:37, 108.56s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [03:37<01:48, 108.79s/it]Loading checkpoint shards: 100%|██████████| 3/3 [04:59<00:00, 96.66s/it] Loading checkpoint shards: 100%|██████████| 3/3 [04:59<00:00, 99.92s/it]
+Optimizer loaded.
+
+[2/2] Loading GSM8K test set
+Dataset size: 1319
+
+Optimized prompts: runs/gsm8k_instance_optimized_prompts_1319.jsonl
+Progress log     : runs/gsm8k_instance_optimize_progress_1319.log
+Full log         : runs/gsm8k_instance_optimize_full_1319.log
+
+======================================================================
+開始生成優化 prompts...
+======================================================================
+
+[Q7] Optimized prompt too short/empty, using silver prompt
+[10/1319] Generated optimized prompts
+[Q10] Optimized prompt too short/empty, using silver prompt
+[Q11] Optimized prompt too short/empty, using silver prompt
+[Q12] Optimized prompt too short/empty, using silver prompt
+[Q13] Optimized prompt too short/empty, using silver prompt
+[Q15] Optimized prompt too short/empty, using silver prompt
+[Q19] Optimized prompt too short/empty, using silver prompt
+[20/1319] Generated optimized prompts
+[Q22] Optimized prompt too short/empty, using silver prompt
+[30/1319] Generated optimized prompts
+[40/1319] Generated optimized prompts
+[Q41] Optimized prompt too short/empty, using silver prompt
+[50/1319] Generated optimized prompts
+[Q52] Optimized prompt too short/empty, using silver prompt
+[Q57] Optimized prompt too short/empty, using silver prompt
+[Q58] Optimized prompt too short/empty, using silver prompt
+[60/1319] Generated optimized prompts
+[Q61] Optimized prompt too short/empty, using silver prompt
+[Q63] Optimized prompt too short/empty, using silver prompt
+[Q69] Optimized prompt too short/empty, using silver prompt
+[70/1319] Generated optimized prompts
+[80/1319] Generated optimized prompts
+[Q81] Optimized prompt too short/empty, using silver prompt
+[Q86] Optimized prompt too short/empty, using silver prompt
+[Q87] Optimized prompt too short/empty, using silver prompt
+[90/1319] Generated optimized prompts
+[Q90] Optimized prompt too short/empty, using silver prompt
+[100/1319] Generated optimized prompts
+[Q100] Optimized prompt too short/empty, using silver prompt
+[Q107] Optimized prompt too short/empty, using silver prompt
+[110/1319] Generated optimized prompts
+[Q110] Optimized prompt too short/empty, using silver prompt
+[Q118] Optimized prompt too short/empty, using silver prompt
+[Q119] Optimized prompt too short/empty, using silver prompt
+[120/1319] Generated optimized prompts
+[Q124] Optimized prompt too short/empty, using silver prompt
+[Q125] Optimized prompt too short/empty, using silver prompt
+[130/1319] Generated optimized prompts
+[Q132] Optimized prompt too short/empty, using silver prompt
+[140/1319] Generated optimized prompts
+[Q144] Optimized prompt too short/empty, using silver prompt
+[Q147] Optimized prompt too short/empty, using silver prompt
+[150/1319] Generated optimized prompts
+[Q153] Optimized prompt too short/empty, using silver prompt
+[Q156] Optimized prompt too short/empty, using silver prompt
+[Q158] Optimized prompt too short/empty, using silver prompt
+[Q159] Optimized prompt too short/empty, using silver prompt
+[160/1319] Generated optimized prompts
+[Q161] Optimized prompt too short/empty, using silver prompt
+[Q165] Optimized prompt too short/empty, using silver prompt
+[Q166] Optimized prompt too short/empty, using silver prompt
+[170/1319] Generated optimized prompts
+[Q175] Optimized prompt too short/empty, using silver prompt
+[180/1319] Generated optimized prompts
+[Q188] Optimized prompt too short/empty, using silver prompt
+[190/1319] Generated optimized prompts
+[Q192] Optimized prompt too short/empty, using silver prompt
+[200/1319] Generated optimized prompts
+[Q201] Optimized prompt too short/empty, using silver prompt
+[Q203] Optimized prompt too short/empty, using silver prompt
+[Q206] Optimized prompt too short/empty, using silver prompt
+[210/1319] Generated optimized prompts
+[Q211] Optimized prompt too short/empty, using silver prompt
+[Q213] Optimized prompt too short/empty, using silver prompt
+[Q214] Optimized prompt too short/empty, using silver prompt
+[Q215] Optimized prompt too short/empty, using silver prompt
+[220/1319] Generated optimized prompts
+[Q227] Optimized prompt too short/empty, using silver prompt
+[Q229] Optimized prompt too short/empty, using silver prompt
+[230/1319] Generated optimized prompts
+[Q235] Optimized prompt too short/empty, using silver prompt
+[Q239] Optimized prompt too short/empty, using silver prompt
+[240/1319] Generated optimized prompts
+[Q242] Optimized prompt too short/empty, using silver prompt
+[Q244] Optimized prompt too short/empty, using silver prompt
+[250/1319] Generated optimized prompts
+[Q254] Optimized prompt too short/empty, using silver prompt
+[Q256] Optimized prompt too short/empty, using silver prompt
+[260/1319] Generated optimized prompts
+[Q265] Optimized prompt too short/empty, using silver prompt
+[Q266] Optimized prompt too short/empty, using silver prompt
+[270/1319] Generated optimized prompts
+[Q270] Optimized prompt too short/empty, using silver prompt
+[Q273] Optimized prompt too short/empty, using silver prompt
+[Q276] Optimized prompt too short/empty, using silver prompt
+[280/1319] Generated optimized prompts
+[Q284] Optimized prompt too short/empty, using silver prompt
+[290/1319] Generated optimized prompts
+[Q290] Optimized prompt too short/empty, using silver prompt
+[Q294] Optimized prompt too short/empty, using silver prompt
+[300/1319] Generated optimized prompts
+[Q303] Optimized prompt too short/empty, using silver prompt
+[310/1319] Generated optimized prompts
+[Q313] Optimized prompt too short/empty, using silver prompt
+[Q316] Optimized prompt too short/empty, using silver prompt
+[320/1319] Generated optimized prompts
+[Q326] Optimized prompt too short/empty, using silver prompt
+[Q327] Optimized prompt too short/empty, using silver prompt
+[330/1319] Generated optimized prompts
+[340/1319] Generated optimized prompts
+[Q342] Optimized prompt too short/empty, using silver prompt
+[Q346] Optimized prompt too short/empty, using silver prompt
+[Q347] Optimized prompt too short/empty, using silver prompt
+[Q348] Optimized prompt too short/empty, using silver prompt
+[350/1319] Generated optimized prompts
+[Q355] Optimized prompt too short/empty, using silver prompt
+[Q356] Optimized prompt too short/empty, using silver prompt
+[Q359] Optimized prompt too short/empty, using silver prompt
+[360/1319] Generated optimized prompts
+[Q361] Optimized prompt too short/empty, using silver prompt
+[Q362] Optimized prompt too short/empty, using silver prompt
+[370/1319] Generated optimized prompts
+[Q373] Optimized prompt too short/empty, using silver prompt
+[380/1319] Generated optimized prompts
+[Q383] Optimized prompt too short/empty, using silver prompt
+[Q384] Optimized prompt too short/empty, using silver prompt
+[Q386] Optimized prompt too short/empty, using silver prompt
+[390/1319] Generated optimized prompts
+[Q390] Optimized prompt too short/empty, using silver prompt
+[Q398] Optimized prompt too short/empty, using silver prompt
+[400/1319] Generated optimized prompts
+[Q406] Optimized prompt too short/empty, using silver prompt
+[Q409] Optimized prompt too short/empty, using silver prompt
+[410/1319] Generated optimized prompts
+[Q413] Optimized prompt too short/empty, using silver prompt
+[Q414] Optimized prompt too short/empty, using silver prompt
+[Q419] Optimized prompt too short/empty, using silver prompt
+[420/1319] Generated optimized prompts
+[Q420] Optimized prompt too short/empty, using silver prompt
+[Q423] Optimized prompt too short/empty, using silver prompt
+[Q426] Optimized prompt too short/empty, using silver prompt
+[Q427] Optimized prompt too short/empty, using silver prompt
+[430/1319] Generated optimized prompts
+[440/1319] Generated optimized prompts
+[Q441] Optimized prompt too short/empty, using silver prompt
+[450/1319] Generated optimized prompts
+[Q451] Optimized prompt too short/empty, using silver prompt
+[460/1319] Generated optimized prompts
+[Q464] Optimized prompt too short/empty, using silver prompt
+[Q468] Optimized prompt too short/empty, using silver prompt
+[Q469] Optimized prompt too short/empty, using silver prompt
+[470/1319] Generated optimized prompts
+[Q470] Optimized prompt too short/empty, using silver prompt
+[480/1319] Generated optimized prompts
+[Q482] Optimized prompt too short/empty, using silver prompt
+[490/1319] Generated optimized prompts
+[Q493] Optimized prompt too short/empty, using silver prompt
+[Q494] Optimized prompt too short/empty, using silver prompt
+[500/1319] Generated optimized prompts
+[Q502] Optimized prompt too short/empty, using silver prompt
+[Q509] Optimized prompt too short/empty, using silver prompt
+[510/1319] Generated optimized prompts
+[Q518] Optimized prompt too short/empty, using silver prompt
+[520/1319] Generated optimized prompts
+[Q522] Optimized prompt too short/empty, using silver prompt
+[Q523] Optimized prompt too short/empty, using silver prompt
+[Q525] Optimized prompt too short/empty, using silver prompt
+[Q528] Optimized prompt too short/empty, using silver prompt
+[Q529] Optimized prompt too short/empty, using silver prompt
+[530/1319] Generated optimized prompts
+[Q534] Optimized prompt too short/empty, using silver prompt
+[Q537] Optimized prompt too short/empty, using silver prompt
+[Q538] Optimized prompt too short/empty, using silver prompt
+[540/1319] Generated optimized prompts
+[550/1319] Generated optimized prompts
+[Q550] Optimized prompt too short/empty, using silver prompt
+[Q555] Optimized prompt too short/empty, using silver prompt
+[Q558] Optimized prompt too short/empty, using silver prompt
+[560/1319] Generated optimized prompts
+[Q569] Optimized prompt too short/empty, using silver prompt
+[570/1319] Generated optimized prompts
+[Q575] Optimized prompt too short/empty, using silver prompt
+[580/1319] Generated optimized prompts
+[Q583] Optimized prompt too short/empty, using silver prompt
+[Q587] Optimized prompt too short/empty, using silver prompt
+[Q588] Optimized prompt too short/empty, using silver prompt
+[590/1319] Generated optimized prompts
+[Q592] Optimized prompt too short/empty, using silver prompt
+[600/1319] Generated optimized prompts
+[Q609] Optimized prompt too short/empty, using silver prompt
+[610/1319] Generated optimized prompts
+[Q618] Optimized prompt too short/empty, using silver prompt
+[620/1319] Generated optimized prompts
+[Q622] Optimized prompt too short/empty, using silver prompt
+[630/1319] Generated optimized prompts
+[640/1319] Generated optimized prompts
+[Q645] Optimized prompt too short/empty, using silver prompt
+[Q647] Optimized prompt too short/empty, using silver prompt
+[650/1319] Generated optimized prompts
+[Q651] Optimized prompt too short/empty, using silver prompt
+[Q653] Optimized prompt too short/empty, using silver prompt
+[660/1319] Generated optimized prompts
+[Q667] Optimized prompt too short/empty, using silver prompt
+[Q668] Optimized prompt too short/empty, using silver prompt
+[670/1319] Generated optimized prompts
+[Q673] Optimized prompt too short/empty, using silver prompt
+[680/1319] Generated optimized prompts
+[Q682] Optimized prompt too short/empty, using silver prompt
+[Q683] Optimized prompt too short/empty, using silver prompt
+[Q685] Optimized prompt too short/empty, using silver prompt
+[Q686] Optimized prompt too short/empty, using silver prompt
+[690/1319] Generated optimized prompts
+[Q690] Optimized prompt too short/empty, using silver prompt
+[Q698] Optimized prompt too short/empty, using silver prompt
+[700/1319] Generated optimized prompts
+[Q706] Optimized prompt too short/empty, using silver prompt
+[710/1319] Generated optimized prompts
+[Q710] Optimized prompt too short/empty, using silver prompt
+[Q711] Optimized prompt too short/empty, using silver prompt
+[720/1319] Generated optimized prompts
+[Q721] Optimized prompt too short/empty, using silver prompt
+[Q724] Optimized prompt too short/empty, using silver prompt
+[730/1319] Generated optimized prompts
+[Q733] Optimized prompt too short/empty, using silver prompt
+[Q734] Optimized prompt too short/empty, using silver prompt
+[Q735] Optimized prompt too short/empty, using silver prompt
+[740/1319] Generated optimized prompts
+[Q743] Optimized prompt too short/empty, using silver prompt
+[Q745] Optimized prompt too short/empty, using silver prompt
+[750/1319] Generated optimized prompts
+[Q750] Optimized prompt too short/empty, using silver prompt
+[Q753] Optimized prompt too short/empty, using silver prompt
+[Q754] Optimized prompt too short/empty, using silver prompt
+[760/1319] Generated optimized prompts
+[Q765] Optimized prompt too short/empty, using silver prompt
+[770/1319] Generated optimized prompts
+[Q771] Optimized prompt too short/empty, using silver prompt
+[Q772] Optimized prompt too short/empty, using silver prompt
+[Q775] Optimized prompt too short/empty, using silver prompt
+[Q777] Optimized prompt too short/empty, using silver prompt
+[780/1319] Generated optimized prompts
+[Q780] Optimized prompt too short/empty, using silver prompt
+[790/1319] Generated optimized prompts
+[Q795] Optimized prompt too short/empty, using silver prompt
+[Q798] Optimized prompt too short/empty, using silver prompt
+[800/1319] Generated optimized prompts
+[Q801] Optimized prompt too short/empty, using silver prompt
+[Q802] Optimized prompt too short/empty, using silver prompt
+[Q806] Optimized prompt too short/empty, using silver prompt
+[810/1319] Generated optimized prompts
+[Q810] Optimized prompt too short/empty, using silver prompt
+[Q814] Optimized prompt too short/empty, using silver prompt
+[Q818] Optimized prompt too short/empty, using silver prompt
+[820/1319] Generated optimized prompts
+[Q823] Optimized prompt too short/empty, using silver prompt
+[Q828] Optimized prompt too short/empty, using silver prompt
+[830/1319] Generated optimized prompts
+[Q833] Optimized prompt too short/empty, using silver prompt
+[Q837] Optimized prompt too short/empty, using silver prompt
+[Q839] Optimized prompt too short/empty, using silver prompt
+[840/1319] Generated optimized prompts
+[Q841] Optimized prompt too short/empty, using silver prompt
+[Q845] Optimized prompt too short/empty, using silver prompt
+[850/1319] Generated optimized prompts
+[Q854] Optimized prompt too short/empty, using silver prompt
+[Q856] Optimized prompt too short/empty, using silver prompt
+[860/1319] Generated optimized prompts
+[Q861] Optimized prompt too short/empty, using silver prompt
+[870/1319] Generated optimized prompts
+[Q877] Optimized prompt too short/empty, using silver prompt
+[Q878] Optimized prompt too short/empty, using silver prompt
+[880/1319] Generated optimized prompts
+[Q882] Optimized prompt too short/empty, using silver prompt
+[Q886] Optimized prompt too short/empty, using silver prompt
+[Q888] Optimized prompt too short/empty, using silver prompt
+[890/1319] Generated optimized prompts
+[Q892] Optimized prompt too short/empty, using silver prompt
+[Q898] Optimized prompt too short/empty, using silver prompt
+[900/1319] Generated optimized prompts
+[Q900] Optimized prompt too short/empty, using silver prompt
+[Q901] Optimized prompt too short/empty, using silver prompt
+[910/1319] Generated optimized prompts
+[Q911] Optimized prompt too short/empty, using silver prompt
+[920/1319] Generated optimized prompts
+[Q927] Optimized prompt too short/empty, using silver prompt
+[930/1319] Generated optimized prompts
+[Q933] Optimized prompt too short/empty, using silver prompt
+[Q937] Optimized prompt too short/empty, using silver prompt
+[Q938] Optimized prompt too short/empty, using silver prompt
+[940/1319] Generated optimized prompts
+[Q947] Optimized prompt too short/empty, using silver prompt
+[950/1319] Generated optimized prompts
+[Q950] Optimized prompt too short/empty, using silver prompt
+[Q958] Optimized prompt too short/empty, using silver prompt
+[960/1319] Generated optimized prompts
+[Q960] Optimized prompt too short/empty, using silver prompt
+[Q961] Optimized prompt too short/empty, using silver prompt
+[970/1319] Generated optimized prompts
+[Q976] Optimized prompt too short/empty, using silver prompt
+[980/1319] Generated optimized prompts
+[990/1319] Generated optimized prompts
+[Q996] Optimized prompt too short/empty, using silver prompt
+[1000/1319] Generated optimized prompts
+[1010/1319] Generated optimized prompts
+[Q1010] Optimized prompt too short/empty, using silver prompt
+[Q1016] Optimized prompt too short/empty, using silver prompt
+[1020/1319] Generated optimized prompts
+[Q1021] Optimized prompt too short/empty, using silver prompt
+[Q1026] Optimized prompt too short/empty, using silver prompt
+[Q1027] Optimized prompt too short/empty, using silver prompt
+[Q1029] Optimized prompt too short/empty, using silver prompt
+[1030/1319] Generated optimized prompts
+[Q1035] Optimized prompt too short/empty, using silver prompt
+[1040/1319] Generated optimized prompts
+[Q1041] Optimized prompt too short/empty, using silver prompt
+[Q1042] Optimized prompt too short/empty, using silver prompt
+[Q1047] Optimized prompt too short/empty, using silver prompt
+[1050/1319] Generated optimized prompts
+[Q1056] Optimized prompt too short/empty, using silver prompt
+[1060/1319] Generated optimized prompts
+[Q1067] Optimized prompt too short/empty, using silver prompt
+[Q1069] Optimized prompt too short/empty, using silver prompt
+[1070/1319] Generated optimized prompts
+[Q1077] Optimized prompt too short/empty, using silver prompt
+[1080/1319] Generated optimized prompts
+[Q1086] Optimized prompt too short/empty, using silver prompt
+[Q1087] Optimized prompt too short/empty, using silver prompt
+[Q1088] Optimized prompt too short/empty, using silver prompt
+[1090/1319] Generated optimized prompts
+[Q1090] Optimized prompt too short/empty, using silver prompt
+[Q1096] Optimized prompt too short/empty, using silver prompt
+[1100/1319] Generated optimized prompts
+[1110/1319] Generated optimized prompts
+[Q1113] Optimized prompt too short/empty, using silver prompt
+[Q1115] Optimized prompt too short/empty, using silver prompt
+[1120/1319] Generated optimized prompts
+[Q1126] Optimized prompt too short/empty, using silver prompt
+[1130/1319] Generated optimized prompts
+[Q1137] Optimized prompt too short/empty, using silver prompt
+[Q1139] Optimized prompt too short/empty, using silver prompt
+[1140/1319] Generated optimized prompts
+[Q1142] Optimized prompt too short/empty, using silver prompt
+[Q1146] Optimized prompt too short/empty, using silver prompt
+[1150/1319] Generated optimized prompts
+[Q1153] Optimized prompt too short/empty, using silver prompt
+[Q1158] Optimized prompt too short/empty, using silver prompt
+[Q1159] Optimized prompt too short/empty, using silver prompt
+[1160/1319] Generated optimized prompts
+[1170/1319] Generated optimized prompts
+[Q1171] Optimized prompt too short/empty, using silver prompt
+[Q1175] Optimized prompt too short/empty, using silver prompt
+[Q1176] Optimized prompt too short/empty, using silver prompt
+[Q1178] Optimized prompt too short/empty, using silver prompt
+[1180/1319] Generated optimized prompts
+[1190/1319] Generated optimized prompts
+[Q1190] Optimized prompt too short/empty, using silver prompt
+[Q1194] Optimized prompt too short/empty, using silver prompt
+[Q1195] Optimized prompt too short/empty, using silver prompt
+[1200/1319] Generated optimized prompts
+[Q1202] Optimized prompt too short/empty, using silver prompt
+[Q1207] Optimized prompt too short/empty, using silver prompt
+[Q1209] Optimized prompt too short/empty, using silver prompt
+[1210/1319] Generated optimized prompts
+[Q1215] Optimized prompt too short/empty, using silver prompt
+[Q1217] Optimized prompt too short/empty, using silver prompt
+[1220/1319] Generated optimized prompts
+[1230/1319] Generated optimized prompts
+[Q1232] Optimized prompt too short/empty, using silver prompt
+[Q1235] Optimized prompt too short/empty, using silver prompt
+[1240/1319] Generated optimized prompts
+[Q1240] Optimized prompt too short/empty, using silver prompt
+[Q1242] Optimized prompt too short/empty, using silver prompt
+[Q1248] Optimized prompt too short/empty, using silver prompt
+[Q1249] Optimized prompt too short/empty, using silver prompt
+[1250/1319] Generated optimized prompts
+[Q1254] Optimized prompt too short/empty, using silver prompt
+[1260/1319] Generated optimized prompts
+[1270/1319] Generated optimized prompts
+[Q1275] Optimized prompt too short/empty, using silver prompt
+[1280/1319] Generated optimized prompts
+[Q1285] Optimized prompt too short/empty, using silver prompt
+[1290/1319] Generated optimized prompts
+[Q1292] Optimized prompt too short/empty, using silver prompt
+[Q1295] Optimized prompt too short/empty, using silver prompt
+[1300/1319] Generated optimized prompts
+[Q1301] Optimized prompt too short/empty, using silver prompt
+[Q1306] Optimized prompt too short/empty, using silver prompt
+[1310/1319] Generated optimized prompts
+[Q1311] Optimized prompt too short/empty, using silver prompt
+[Q1318] Optimized prompt too short/empty, using silver prompt
+
+======================================================================
+階段 1 完成！優化 prompts 已存至: runs/gsm8k_instance_optimized_prompts_1319.jsonl
+======================================================================
+
+下一步：執行階段 2 (生成答案)
+  python fipo_gsm8k_13b_2stage_fixed.py --mode generate \
+    --optimized_prompts_file runs/gsm8k_instance_optimized_prompts_1319.jsonl
+

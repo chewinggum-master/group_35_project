@@ -1,0 +1,14 @@
+======================================================================
+Stage 2: Generate answers with optimized prompts
+Generator: meta-llama/Llama-2-7b-hf
+Prompts file: runs/gsm8k_instance_optimized_prompts_20.jsonl
+Total: 20
+======================================================================
+
+[10/20] Acc: 20.00% (2/10)
+[20/20] Acc: 10.00% (2/20)
+
+======================================================================
+Stage 2 done. Accuracy: 10.00% (2/20)
+Results: runs/gsm8k_instance_results_20.json
+======================================================================

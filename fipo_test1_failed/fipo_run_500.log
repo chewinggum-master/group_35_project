@@ -1,0 +1,216 @@
+GPU 記憶體已重置
+======================================================================
+FIPO 實驗: Llama2-7B on GSM8K
+Generator: meta-llama/Llama-2-7b-hf
+Optimizer: allenai/tulu-2-dpo-13b
+Limit: 500, Shots: 3
+======================================================================
+跳過 Naive baseline
+
+使用預設或已保存的 FIPO 指令
+
+已從 data/fipo_instruction.txt 讀取
+✓ FIPO 指令: To effectively solve a math word problem and obtain a numeric answer, follow these steps:
+
+1. Carefully read and understand the problem, including any given information or constraints.
+2. Identify the key variables and their units, if any.
+3. Write down the given information in a clear and organized manner.
+4. Determine what operation is needed to solve the problem (addition, subtraction, multiplication, division, etc.).
+5. Perform the necessary calculations, being sure to follow any rules for order of operations.
+6. Check your work for any errors or inconsistencies.
+7. If the problem involves units, be sure to convert them appropriately.
+8. Finally, output the numeric answer to the problem.
+
+Remember to always show your work and clearly explain your thought process, as this will help you better understand the problem and improve your problem-solving skills.
+
+第 3 步: FIPO 評測 (Llama2-7B)
+
+
+======================================================================
+評測: meta-llama/Llama-2-7b-hf | 模式: fipo | Shots: 3
+指令: To effectively solve a math word problem and obtain a numeric answer, follow the...
+======================================================================
+
+載入 Llama2-7B 模型...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.16s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.27s/it]
+載入 GSM8K...
+限制為 500 題
+開始評測 500 題...
+
+進度檔: JSONL -> runs/gsm8k_llama2-7b_fipo_3shot_progress_500.jsonl
+進度檔: LOG   -> runs/gsm8k_fipo_3shot_progress_500.log
+/datas/store162/jeff/fipo_project/FIPO_Project/gsm8k_fipo_llama2.py:151: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=torch.float16):
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+完成 10/500, 正確率: 30.00%
+完成 20/500, 正確率: 20.00%
+完成 30/500, 正確率: 13.33%
+完成 40/500, 正確率: 10.00%
+完成 50/500, 正確率: 8.00%
+完成 60/500, 正確率: 10.00%
+完成 70/500, 正確率: 8.57%
+完成 80/500, 正確率: 10.00%
+完成 90/500, 正確率: 8.89%
+完成 100/500, 正確率: 9.00%
+完成 110/500, 正確率: 8.18%
+完成 120/500, 正確率: 7.50%
+完成 130/500, 正確率: 8.46%
+完成 140/500, 正確率: 7.86%
+完成 150/500, 正確率: 8.00%
+完成 160/500, 正確率: 7.50%
+完成 170/500, 正確率: 7.65%
+完成 180/500, 正確率: 7.78%
+完成 190/500, 正確率: 7.89%
+完成 200/500, 正確率: 8.00%
+完成 210/500, 正確率: 8.10%
+完成 220/500, 正確率: 8.18%
+完成 230/500, 正確率: 8.26%
+完成 240/500, 正確率: 7.92%
+完成 250/500, 正確率: 7.60%
+完成 260/500, 正確率: 7.31%
+完成 270/500, 正確率: 7.04%
+完成 280/500, 正確率: 6.79%
+完成 290/500, 正確率: 6.55%
+完成 300/500, 正確率: 6.33%
+完成 310/500, 正確率: 6.77%
+完成 320/500, 正確率: 7.19%
+完成 330/500, 正確率: 7.27%
+完成 340/500, 正確率: 7.35%
+完成 350/500, 正確率: 7.14%
+完成 360/500, 正確率: 7.22%
+完成 370/500, 正確率: 7.03%
+完成 380/500, 正確率: 7.63%
+完成 390/500, 正確率: 7.69%
+完成 400/500, 正確率: 7.75%
+完成 410/500, 正確率: 7.80%
+完成 420/500, 正確率: 7.62%
+完成 430/500, 正確率: 7.44%
+完成 440/500, 正確率: 7.50%
+完成 450/500, 正確率: 7.33%
+完成 460/500, 正確率: 7.17%
+完成 470/500, 正確率: 7.02%
+完成 480/500, 正確率: 7.08%
+完成 490/500, 正確率: 7.14%
+完成 500/500, 正確率: 7.40%
+
+======================================================================
+結果: fipo | 準確率: 7.40% (37/500)
+檔案: runs/gsm8k_llama2-7b_fipo_3shot_500.json
+======================================================================
+
+✓ FIPO: 7.40%
+
+======================================================================
+最終結果 (Llama2-7B on GSM8K)
+======================================================================
+FIPO Prompt:     7.40%
+======================================================================
+GPU 記憶體已重置
+======================================================================
+FIPO 實驗: Llama2-7B on GSM8K
+Generator: meta-llama/Llama-2-7b-hf
+Optimizer: allenai/tulu-2-dpo-13b
+Limit: 500, Shots: 3
+======================================================================
+跳過 Naive baseline
+
+使用預設或已保存的 FIPO 指令
+
+已從 data/fipo_instruction.txt 讀取
+✓ FIPO 指令: To effectively solve a math word problem and obtain a numeric answer, follow these steps:
+
+1. Carefully read and understand the problem, including any given information or constraints.
+2. Identify the key variables and their units, if any.
+3. Write down the given information in a clear and organized manner.
+4. Determine what operation is needed to solve the problem (addition, subtraction, multiplication, division, etc.).
+5. Perform the necessary calculations, being sure to follow any rules for order of operations.
+6. Check your work for any errors or inconsistencies.
+7. If the problem involves units, be sure to convert them appropriately.
+8. Finally, output the numeric answer to the problem.
+
+Remember to always show your work and clearly explain your thought process, as this will help you better understand the problem and improve your problem-solving skills.
+
+第 3 步: FIPO 評測 (Llama2-7B)
+
+
+======================================================================
+評測: meta-llama/Llama-2-7b-hf | 模式: fipo | Shots: 3
+指令: To effectively solve a math word problem and obtain a numeric answer, follow the...
+======================================================================
+
+載入 Llama2-7B 模型...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [01:05<01:05, 65.18s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:10<00:00, 30.08s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:10<00:00, 35.35s/it]
+載入 GSM8K...
+限制為 500 題
+開始評測 500 題...
+
+進度檔: JSONL -> runs/gsm8k_llama2-7b_fipo_3shot_progress_500.jsonl
+進度檔: LOG   -> runs/gsm8k_fipo_3shot_progress_500.log
+/datas/store162/jeff/fipo_project/FIPO_Project/gsm8k_fipo_llama2.py:171: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=torch.float16):
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+完成 10/500, 正確率: 30.00%
+完成 20/500, 正確率: 20.00%
+完成 30/500, 正確率: 13.33%
+完成 40/500, 正確率: 12.50%
+完成 50/500, 正確率: 10.00%
+完成 60/500, 正確率: 11.67%
+完成 70/500, 正確率: 10.00%
+完成 80/500, 正確率: 11.25%
+完成 90/500, 正確率: 10.00%
+完成 100/500, 正確率: 10.00%
+完成 110/500, 正確率: 9.09%
+完成 120/500, 正確率: 8.33%
+完成 130/500, 正確率: 9.23%
+完成 140/500, 正確率: 8.57%
+完成 150/500, 正確率: 8.67%
+完成 160/500, 正確率: 8.12%
+完成 170/500, 正確率: 8.24%
+完成 180/500, 正確率: 8.33%
+完成 190/500, 正確率: 8.42%
+完成 200/500, 正確率: 8.50%
+完成 210/500, 正確率: 8.10%
+完成 220/500, 正確率: 8.18%
+完成 230/500, 正確率: 8.26%
+完成 240/500, 正確率: 7.92%
+完成 250/500, 正確率: 7.60%
+完成 260/500, 正確率: 7.31%
+完成 270/500, 正確率: 7.04%
+完成 280/500, 正確率: 6.79%
+完成 290/500, 正確率: 6.55%
+完成 300/500, 正確率: 6.33%
+完成 310/500, 正確率: 7.10%
+完成 320/500, 正確率: 7.50%
+完成 330/500, 正確率: 7.58%
+完成 340/500, 正確率: 7.65%
+完成 350/500, 正確率: 7.43%
+完成 360/500, 正確率: 7.50%
+完成 370/500, 正確率: 7.30%
+完成 380/500, 正確率: 7.89%
+完成 390/500, 正確率: 7.95%
+完成 400/500, 正確率: 8.00%
+完成 410/500, 正確率: 8.05%
+完成 420/500, 正確率: 7.86%
+完成 430/500, 正確率: 7.67%
+完成 440/500, 正確率: 7.73%
+完成 450/500, 正確率: 7.56%
+完成 460/500, 正確率: 7.39%
+完成 470/500, 正確率: 7.45%
+完成 480/500, 正確率: 7.50%
+完成 490/500, 正確率: 7.55%
+完成 500/500, 正確率: 7.80%
+
+======================================================================
+結果: fipo | 準確率: 7.80% (39/500)
+檔案: runs/gsm8k_llama2-7b_fipo_3shot_progress_500_2.json
+======================================================================
+
+✓ FIPO: 7.80%
+
+======================================================================
+最終結果 (Llama2-7B on GSM8K)
+======================================================================
+FIPO Prompt:     7.80%
+======================================================================

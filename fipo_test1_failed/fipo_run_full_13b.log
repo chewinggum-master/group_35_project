@@ -1,0 +1,62 @@
+GPU 記憶體已重置
+======================================================================
+FIPO 實驗: Llama2-7B on GSM8K
+Generator: meta-llama/Llama-2-7b-hf
+Optimizer: allenai/tulu-2-dpo-13b
+Limit: None, Shots: 3
+======================================================================
+跳過 Naive baseline
+
+使用預設或已保存的 FIPO 指令
+
+已從 data/fipo_instruction_13b.txt 讀取
+✓ FIPO 指令: To effectively solve math word problems, follow these steps:
+1. Carefully read and understand the problem to identify the key information and the type of operation required.
+2. Break down the problem into smaller parts, if necessary, to simplify the process.
+3. Perform the necessary calculations, either mentally or using a calculator, and write down each step.
+4. Double-check your work to ensure accuracy and correct any errors.
+5. Present the final numeric answer clearly and concisely, along with any relevant units or measurements.
+By following these steps, you will be able to solve math word problems effectively and accurately.
+
+第 3 步: FIPO 評測 (Llama2-7B)
+
+
+======================================================================
+評測: meta-llama/Llama-2-7b-hf | 模式: fipo | Shots: 3
+指令: To effectively solve math word problems, follow these steps:
+1. Carefully read a...
+======================================================================
+
+載入 Llama2-7B 模型...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.28s/it]
+載入 GSM8K...
+開始評測 1319 題...
+
+進度檔: JSONL -> runs/gsm8k_llama2-7b_fipo_3shot_progress_1319.jsonl
+進度檔: LOG   -> runs/gsm8k_fipo_3shot_progress_1319.log
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+完成 10/1319, 正確率: 30.00%
+完成 20/1319, 正確率: 20.00%
+完成 30/1319, 正確率: 13.33%
+完成 40/1319, 正確率: 12.50%
+完成 50/1319, 正確率: 10.00%
+完成 60/1319, 正確率: 11.67%
+完成 70/1319, 正確率: 10.00%
+完成 80/1319, 正確率: 11.25%
+完成 90/1319, 正確率: 10.00%
+完成 100/1319, 正確率: 10.00%
+完成 110/1319, 正確率: 9.09%
+完成 120/1319, 正確率: 8.33%
+完成 130/1319, 正確率: 9.23%
+完成 140/1319, 正確率: 9.29%
+完成 150/1319, 正確率: 10.00%
+完成 160/1319, 正確率: 9.38%
+完成 170/1319, 正確率: 9.41%
+完成 180/1319, 正確率: 9.44%
+完成 190/1319, 正確率: 9.47%
+完成 200/1319, 正確率: 9.50%
+完成 210/1319, 正確率: 9.05%
+完成 220/1319, 正確率: 9.09%
+完成 230/1319, 正確率: 8.70%
+完成 240/1319, 正確率: 8.33%

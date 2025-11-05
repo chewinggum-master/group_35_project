@@ -1,0 +1,1 @@
+"Provide a step-by-step solution to a math word problem, then output the final answer using mathematical notation."

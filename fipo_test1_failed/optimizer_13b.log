@@ -1,0 +1,31 @@
+GPU 記憶體已重置
+======================================================================
+FIPO 實驗: Llama2-7B on GSM8K
+Generator: meta-llama/Llama-2-7b-hf
+Optimizer: allenai/tulu-2-dpo-13b
+Limit: None, Shots: 3
+======================================================================
+
+只執行優化器模式：不跑 baseline/評測，僅生成並保存 FIPO 指令
+
+
+正在載入 Optimizer: allenai/tulu-2-dpo-13b...
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [01:25<02:51, 85.88s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [02:49<01:24, 84.83s/it]Loading checkpoint shards: 100%|██████████| 3/3 [03:41<00:00, 69.80s/it]Loading checkpoint shards: 100%|██████████| 3/3 [03:41<00:00, 73.96s/it]
+Optimizer prompt: <|user|>
+Rewrite the following instruction to make it more specific and effective for solving math word problems:
+
+Original instruction: Solve the mat...
+生成優化指令...
+
+生成的 FIPO 指令:
+To effectively solve math word problems, follow these steps:
+1. Carefully read and understand the problem to identify the key information and the type of operation required.
+2. Break down the problem into smaller parts, if necessary, to simplify the process.
+3. Perform the necessary calculations, either mentally or using a calculator, and write down each step.
+4. Double-check your work to ensure accuracy and correct any errors.
+5. Present the final numeric answer clearly and concisely, along with any relevant units or measurements.
+By following these steps, you will be able to solve math word problems effectively and accurately.
+
+已保存 FIPO 指令至 data/fipo_instruction_13b.txt

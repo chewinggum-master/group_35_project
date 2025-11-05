@@ -1,0 +1,45 @@
+GPU 記憶體已重置
+======================================================================
+FIPO 實驗: Llama2-7B on GSM8K
+Generator: meta-llama/Llama-2-7b-hf
+Optimizer: allenai/tulu-2-dpo-13b
+Limit: None, Shots: 3
+======================================================================
+
+第 1 步: Naive Baseline (Llama2-7B)
+
+
+======================================================================
+評測: meta-llama/Llama-2-7b-hf | 模式: naive | Shots: 3
+指令: Solve the math word problem step by step, then output the final numeric answer....
+======================================================================
+
+載入 Llama2-7B 模型...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.24s/it]
+載入 GSM8K...
+開始評測 1319 題...
+
+進度檔: JSONL -> runs/gsm8k_llama2-7b_naive_3shot_progress_1319.jsonl
+進度檔: LOG   -> runs/gsm8k_naive_3shot_progress_1319.log
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+完成 10/1319, 正確率: 30.00%
+完成 20/1319, 正確率: 20.00%
+完成 30/1319, 正確率: 13.33%
+完成 40/1319, 正確率: 10.00%
+完成 50/1319, 正確率: 8.00%
+完成 60/1319, 正確率: 10.00%
+完成 70/1319, 正確率: 8.57%
+完成 80/1319, 正確率: 10.00%
+完成 90/1319, 正確率: 8.89%
+完成 100/1319, 正確率: 9.00%
+完成 110/1319, 正確率: 8.18%
+完成 120/1319, 正確率: 7.50%
+完成 130/1319, 正確率: 8.46%
+完成 140/1319, 正確率: 8.57%
+完成 150/1319, 正確率: 9.33%
+完成 160/1319, 正確率: 8.75%
+完成 170/1319, 正確率: 8.82%
+完成 180/1319, 正確率: 8.89%
+完成 190/1319, 正確率: 8.95%
+完成 200/1319, 正確率: 9.00%
